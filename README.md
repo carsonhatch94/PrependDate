@@ -6,10 +6,7 @@ Created as a part of my "One Session Project" series.
 
 Created this to make it easier to name the files for my family website. Reduces typing since I like to name my files like:
 
-YYYY_MM_{People-in-photo}_{what-they-are-doing} 
-2025_09_kids_playground
-2024_12_family_santa
-2021_01_parents_dinner_date
+YYYY_MM_{People-in-photo}_{what-they-are-doing} ------> 2025_09_kids_playground
 
 ## Features
 
