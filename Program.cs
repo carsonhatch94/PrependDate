@@ -7,10 +7,12 @@ string folderPath = GetFolderPath();
 
 while (true)
 {
+    Console.WriteLine($"\nCurrent folder: {folderPath}");
     Console.WriteLine("\nSelect an operation:");
     Console.WriteLine("A - Add Date Prefix");
     Console.WriteLine("E - Edit Date Prefix");
     Console.WriteLine("R - Remove Date Prefix");
+    Console.WriteLine("C - Change file path");
     Console.WriteLine("Q - Quit");
     Console.Write("\nEnter your choice: ");
 
@@ -27,6 +29,9 @@ while (true)
             break;
         case 'R':
             RemoveDatePrefix(folderPath);
+            break;
+        case 'C':
+            folderPath = ChangeFolderPath();
             break;
         case 'Q':
             Console.WriteLine("Goodbye!");
@@ -59,6 +64,12 @@ static string GetFolderPath()
     } while (string.IsNullOrEmpty(folderPath));
 
     return folderPath;
+}
+
+static string ChangeFolderPath()
+{
+    Console.WriteLine("=== Change File Path ===");
+    return GetFolderPath();
 }
 
 static (int year, int month) GetDateInput()
